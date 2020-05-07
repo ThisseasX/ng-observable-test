@@ -1,0 +1,8 @@
+<div>
+  <input #input />
+  <button (click)="updateData(input.value); input.value = ''">Add</button>
+
+  <ul *ngFor="let entry of componentData">
+    <li>{{ entry }}</li>
+  </ul>
+</div>
